@@ -27,17 +27,17 @@ uv install
 
 uv run main.py
 ```
-# 2 - reconhecimento_dataVencimento_remdios
+# 2 - reconhecimento_dataVencimento_remedios
 Para Analisar imagens de caixas de remédios e extrair a data de validade. Como eu não posso usar a AWS, eu substitui o Amazon Rekognition pelo Tesseract OCR, que é uma ferramenta de reconhecimento óptico de caracteres (OCR) de código aberto.
 
-Este novo código irá:
+## Este novo código irá:
 
 Ler a imagem da caixa do remédio.
 Extrair a data de validade usando OCR (Tesseract).
 Verificar se o medicamento está vencido, próximo do vencimento ou válido.
 Gerar um alerta para o responsável pelo estoque.
 
-Pré-requisitos:
+## Pré-requisitos:
 Instalar o Tesseract OCR (se ainda não tiver instalado):
 No Windows: Baixe e instale Tesseract OCR.
 
@@ -50,7 +50,7 @@ brew install tesseract
 Instalar as dependências do Python:
 pip install pytesseract pillow
 
-Como funciona:
+## Como funciona:
 O código lê a imagem da caixa do remédio.
 Usa OCR para extrair a data de validade.
 Analisa a data e dá um alerta:
